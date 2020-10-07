@@ -58,6 +58,8 @@ body {
     font-family: "Open Sans";
     background-color: #2F4454;
     color: white;
+    max-width: 75vw;
+    margin: auto;
 }
 
 /* //////////////////////////////////////////////////////////////////////// */
