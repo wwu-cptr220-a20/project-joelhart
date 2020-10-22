@@ -54,6 +54,11 @@ img, ul.large {
     font-size: 50px;
     color: #DA7B93;
     font-weight: 900;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: color 2s ease-out;
+
 }
 
 .child {
@@ -65,11 +70,11 @@ img, ul.large {
     width: 100%;
     padding: 5px;
 }
-
-@keyframes fade {
+/* Old Title Animation */
+/* @keyframes fade {
     0% {color: #2F4454;}
     100% {color: #DA7B93;}
-}
+} */
 
 h1.title {
     color: #DA7B93;
@@ -92,6 +97,17 @@ div.app p {
 
 .think {
     display: none;
+}
+
+#hide_all_btn {
+align-self: center;
+align-content: center;
+text-align: center;
+}
+
+#hide_all:hover, .main_hide:hover{
+    background-color: rgba(255,255,255,.5);
+    cursor: crosshair;
 }
 
 /*///////////////////// Medium Devices ////////////////////////////*/
