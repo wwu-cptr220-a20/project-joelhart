@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <!-- FIX FOR BROKEN LINKS - STILL CANT FIX THIS -->
+    <!-- FIX FOR BROKEN LINKS ON GH PAGES - STILL CANT FIX THIS -->
     <!-- <header>
         <div class="dropdown">
             <img class="btn" src="img/menu-4-128.png" alt="menu-tab">
@@ -45,7 +45,7 @@
         </ul>
     </header> -->
 
-        <header>
+    <header>
         <div class="dropdown">
             <img class="btn" src="img/menu-4-128.png" alt="menu-tab">
 
@@ -56,7 +56,7 @@
                 <li><a href="/project-joelhart/-About/index.html">About</a></li>
             </ul>
         </div>
-        
+
         <ul class="large ">
             <li><a class="hvr-float active" href="/project-joelhart/index.html">Home</a></li>
             <li><a class="hvr-float" href="/project-joelhart/index.html#App">App</a></li>
@@ -85,7 +85,7 @@
                 other
                 or simply to look more educated.
                 The fact is that the language barrier is quite difficult to overcome quickly.
-            <br><br>
+                <br><br>
                 But what if I told you there was a better way, an easier way to stop stressing about all the
                 languages
                 you
@@ -144,7 +144,9 @@
         </div>
 
         <div class="child app" id="App">
-            <p role="document">APP</p>
+            <textarea placeholder="Type Word Here"></textarea>
+            <button id="btn" onclick="btnFunction()">Generate</button>
+            <p role="document" id="Applicate"></p>
         </div>
 
     </div>
@@ -155,7 +157,9 @@
 
 </body>
 
+<!-- Load JavaScript libraries here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 <script src="script/global/theme.js"></script>
 
 </html>
-
