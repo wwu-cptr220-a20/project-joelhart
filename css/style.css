@@ -70,8 +70,9 @@ img, ul.large {
     width: 100%;
     padding: 5px;
     align-self: center;
-align-content: center;
-text-align: center;
+/* align-content: center;
+text-align: center; */
+
 }
 /* Old Title Animation */
 /* @keyframes fade {
@@ -89,12 +90,16 @@ h1.title {
 .app {
     min-height: 35vh;
     align-items: center;
-    /* align-content: center;
-    vertical-align: middle; */
+    align-self: center;
+    align-content: center;
+    text-align: center;
     background-color: #DA7B93;
     color: #2E151B;
     font-weight: 900;
-    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*padding: 40px; */
 }
 
 div.app p {
@@ -120,17 +125,20 @@ textarea {
     resize: none;
     width: 50vw;
     height: 50%;
+    margin-top: 40px;
 }
 
 #Applicate {
     font-size: 20px;
     color: white;
+    line-height: 120%;
 }
 
 #App button {
     margin: 10px;
     padding: 5px;
 }
+
 
 /*///////////////////// Medium Devices ////////////////////////////*/
 @media (min-width: 768px) {

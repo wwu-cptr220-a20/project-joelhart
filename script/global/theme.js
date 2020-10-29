@@ -2,7 +2,7 @@
 window.onload = function () {
     // document.getElementById('hide_all').addEventListener('click', hideAll);
     globalState = { main: true, single_hide: [0, 0, 0] };
-    setInterval(titleAnimation, 3000);
+    // setInterval(titleAnimation, 3000);
 }
 
 // Minimal yet required variables here
@@ -49,7 +49,7 @@ function render(doc, val) {
 }
 
 // Subtle yet fitting pulsing title animation
-function titleAnimation() {
+/*function titleAnimation() {
 
     let trate = document.querySelector('h1');
     if (titleCount == 1) {
@@ -59,7 +59,7 @@ function titleAnimation() {
         titleCount = 1;
         trate.style.color = "rgb(247,173,192)";
     }
-}
+} */
 
 // Helper constants for fetch request
 const URL_TEMPLATE = "https://wordsapiv1.p.rapidapi.com/words/";
@@ -93,10 +93,27 @@ function renderApp(obj) {
 // Adding button functionality
 function btnFunction() {
     let word = document.querySelector('textarea').value;
-    if (word != "") {
+    if (word == "") {
+        document.getElementById('Applicate').innerText = "No Result Found";
+    } else {
         fetchData(word);
     }
 }
 
 // Click event found at button so it runs after functions defined
 document.getElementById('btn').addEventListener('click', btnFunction());
+
+var granimInstance = new Granim({
+    element: '#test',
+    direction: 'diagonal',
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+                ['#ff9966', '#ff5e62'],
+                ['#00F260', '#0575E6'],
+                ['#e1eec3', '#f05053']
+            ]
+        }
+    }
+});
